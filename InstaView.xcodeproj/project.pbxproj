@@ -14,6 +14,7 @@
 		A5CA631A1DE4DAFA006CE239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CA63181DE4DAFA006CE239 /* LaunchScreen.storyboard */; };
 		A5CA63251DE4DAFA006CE239 /* InstaViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA63241DE4DAFA006CE239 /* InstaViewTests.swift */; };
 		A5CA63301DE4DAFB006CE239 /* InstaViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA632F1DE4DAFB006CE239 /* InstaViewUITests.swift */; };
+		FE3AE6F2747AE1160E57B83C /* Pods_InstaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7410C8F784BD2A6C33B6297 /* Pods_InstaView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DC387962689310CC3778E1D /* Pods-InstaView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaView/Pods-InstaView.debug.xcconfig"; sourceTree = "<group>"; };
 		A5CA630C1DE4DAFA006CE239 /* InstaView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CA630F1DE4DAFA006CE239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5CA63111DE4DAFA006CE239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		A5CA632B1DE4DAFB006CE239 /* InstaViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CA632F1DE4DAFB006CE239 /* InstaViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaViewUITests.swift; sourceTree = "<group>"; };
 		A5CA63311DE4DAFB006CE239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC8748B95EFE3396074253 /* Pods-InstaView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaView.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaView/Pods-InstaView.release.xcconfig"; sourceTree = "<group>"; };
+		C7410C8F784BD2A6C33B6297 /* Pods_InstaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3AE6F2747AE1160E57B83C /* Pods_InstaView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B0D89CF01633B0FC2219CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7410C8F784BD2A6C33B6297 /* Pods_InstaView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5CA63031DE4DAFA006CE239 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				A5CA63231DE4DAFA006CE239 /* InstaViewTests */,
 				A5CA632E1DE4DAFB006CE239 /* InstaViewUITests */,
 				A5CA630D1DE4DAFA006CE239 /* Products */,
+				CDF3423F457EAB1D3DE50E02 /* Pods */,
+				65B0D89CF01633B0FC2219CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = InstaViewUITests;
 			sourceTree = "<group>";
 		};
+		CDF3423F457EAB1D3DE50E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DC387962689310CC3778E1D /* Pods-InstaView.debug.xcconfig */,
+				B6AC8748B95EFE3396074253 /* Pods-InstaView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5CA63341DE4DAFB006CE239 /* Build configuration list for PBXNativeTarget "InstaView" */;
 			buildPhases = (
+				24D086C0A9B8DFD2542DCBA0 /* [CP] Check Pods Manifest.lock */,
 				A5CA63081DE4DAFA006CE239 /* Sources */,
 				A5CA63091DE4DAFA006CE239 /* Frameworks */,
 				A5CA630A1DE4DAFA006CE239 /* Resources */,
+				A4E2419992BD7E9EADEC1682 /* [CP] Embed Pods Frameworks */,
+				CA6B66ABB1A1B97A16244BB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D086C0A9B8DFD2542DCBA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4E2419992BD7E9EADEC1682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaView/Pods-InstaView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6B66ABB1A1B97A16244BB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaView/Pods-InstaView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5CA63081DE4DAFA006CE239 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		A5CA63351DE4DAFB006CE239 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC387962689310CC3778E1D /* Pods-InstaView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaView/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		A5CA63361DE4DAFB006CE239 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AC8748B95EFE3396074253 /* Pods-InstaView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaView/Info.plist;
